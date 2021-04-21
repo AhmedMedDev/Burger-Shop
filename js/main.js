@@ -74,16 +74,35 @@ $(document).ready(function () {
                 "paddingBottom":"250px",
                 "background": "transparent" ,
                 "height":"70px",
-            })
+            });
+            $('.nav ul li a').css({
+                "color":"#fff",
+            });
+            $('.nav .ulNotindex li a').css({
+                "color":"#000",
+            });
+            $('.nav .notIndex img ').attr("src", "https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo_dark.png");
         }else{
             $('.nav').css({
                 "paddingTop":"10px",
                 "paddingBottom":"0px",
-                "background": "#161719" ,
+                "background": "#000" ,
                 "height":"60px !important",
+            });
+            $('.nav ul li a').css({
+                "color":"#fff",
             })
+            $('.nav .logo img').attr("src", "https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo.png");
+            
         }
     });
+    if($(window).width() < 990){
+        $('.nav ul li a').css({
+            "color":"#fff",
+        })
+        $('.nav .logo img').attr("src", "https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo.png");
+    }
+   
     /////////////////////////////////////////
     //FOR TEAM SECTION
     var count = 0;
@@ -132,7 +151,37 @@ $(document).ready(function () {
    /*************************************************SCROLL_TO_TOP**************/
 
     
-    
+   jQuery('.quantity').each(function() {
+    var spinner = jQuery(this),
+      input = spinner.find('input[type="number"]'),
+      btnUp = spinner.find('.quantity-up'),
+      btnDown = spinner.find('.quantity-down'),
+      min = input.attr('min'),
+      max = input.attr('max');
+
+    btnUp.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue >= max) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue + 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+    btnDown.click(function() {
+      var oldValue = parseFloat(input.val());
+      if (oldValue <= min) {
+        var newVal = oldValue;
+      } else {
+        var newVal = oldValue - 1;
+      }
+      spinner.find("input").val(newVal);
+      spinner.find("input").trigger("change");
+    });
+
+  });
     
     
     

@@ -75,6 +75,9 @@ button{
     outline: none !important;
     padding: 1rem;
 }
+input{
+    outline: none;
+}
 p{
     color: #515050;
     font-weight: 400;
@@ -124,6 +127,9 @@ a:hover{
     color: white;
     flex-grow: 1
 }
+.nav .logo img{
+    transition: all .3s ease-in-out;
+}
 .nav .icon-nav > div{
     width: 22px;
     height: 3px;
@@ -167,11 +173,14 @@ a:hover{
     color: #00C9DB;
     transition: all .3s ease
 } 
-.nav ul li a{
+.nav ul.ulNotindex li a{
     text-decoration: none;
-    color: #fff;
+    color: black;
     font-weight: bolder;
     transition: all .1s ease;
+}
+.nav ul li a{
+    color: white;
 }
 .nav ul li:nth-child(1) a:hover{
     color: #439fdf
