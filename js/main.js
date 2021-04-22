@@ -187,7 +187,12 @@ $(document).ready(function () {
     
     
     
-    
+    $('.payMethode input').on("click",function(){
+
+        $('.payMethode .box').slideUp(400);
+        $(this).siblings('.box').slideDown(400);
+
+    })
     
     
     

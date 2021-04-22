@@ -1,0 +1,258 @@
+<!-- All detils about address -->
+<!-- Your order  -->
+<!-- Payment Methode -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link rel="icon" href="https://jevelin.shufflehound.com/fav.png">
+        
+        <title>  Burger-Shop </title>
+         
+        <!------------------BOOTSTRAB------------------------------------------------------------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!------------------END BOOTSTRAB------------------------------------------------------------------------->
+        
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/check.css">
+        
+    </head>
+    <body>
+        <!--NAVBAR-->
+        <nav class="nav">
+            <div class="container">
+                <div class="logo disF notIndex">
+                    <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo_dark.png" alt="" width="85" height="22">
+                </div>
+                <div class="icon-nav hidden">
+                    <div class="inFerst"></div>
+                    <div class="inSecond"></div>
+                    <div class="inThird"></div>
+                </div>
+                <div class="nav-links">
+                    <div class="container">
+                        <ul class="ulNotindex">
+                            <li><a href="" data-scroll = "HOME"><span>HOME</span></a></li>
+                            <li><a href="" data-scroll = "ABOUT"><span>ABOUT</span></a></li>
+                            <li><a href="" data-scroll = "OFFERS"><span>OFFERS</span></a></li>
+                            <li><a href="" data-scroll = "MENU"><span>MENU</span></a></li>
+                            <li><a href="" data-scroll = "CONTACT"><span>CONTACT</span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="clear"></div>
+        <!--END NAVBAR-->
+        <!-- Rout-->
+        <div class="rout ">
+            <div class="container ">
+                <div class="content">
+                    <div class="title">Shop</div>
+                    <div class="url">
+                        <span> <a href="index.html">Home</a> </span>
+                        <span class="ml-2">></span>
+                        <span class="ml-2">Checkout</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Rout-->
+        <!-- progress bar-->
+        <div class="prog">
+            <div class="container">
+                <div class="content">
+                    <ul class="probar">
+                        <li class="cart ">View Cart</li>
+                        <li class="cart activeCart">Checkout</li>
+                        <li class="cart">Done</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Billing details-->
+        <div class="billDet">
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <div class="addDet">
+                                <h3 class="litTitle">Billing details</h3>
+                                <form action="/action_page.php">
+                                    <div class="form-group">
+                                      <label for="country">Country / Region *</label>
+                                      <input class="input" type="text"  placeholder="United Kingdom" id="country">
+                                    </div>
+                                    <div class="form-group">
+                                      <label for="street">Street address *</label>
+                                      <input class="input" type="text"  placeholder="House Number and Street Name" id="street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="street">Town / City * </label>
+                                        <input class="input" type="text"  placeholder="" id="street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="street">Postcode *</label>
+                                        <input class="input" type="text"  placeholder="Enter Postcode of Country" id="street">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="street">Phone *</label>
+                                        <input class="input" type="text"  placeholder="Enter Your Phone" id="street">
+                                    </div>
+                                    <h3 class="litTitle">Additional information</h3>
+                                    <div class="form-group">
+                                        <label for="exampleFormControlTextarea1">Order notes (optional)</label>
+                                        <textarea id="exampleFormControlTextarea1" rows="3" placeholder="Notes about your order, e.g. special notes for delivery."></textarea>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="yourOrder">
+                                <h3 class="litTitle">Your order</h3>
+                                <div class="order">
+                                    <div class="disF orderInfo first">
+                                        <div class="leftOrder disF-a">
+                                            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/11/Layer-1-300x300.png" alt="" width="50px" height="50px" class="mr-4">
+                                            <h5 class="price">Juicy Burger  × 2</h5>
+                                        </div>
+                                        <h5 class="price">$8.00</h5>
+                                    </div>
+                                    <div class="disF orderInfo">
+                                        <h5 class="title">Total</h5>
+                                        <h5 class="price">$8.00</h5>
+                                    </div>
+                                    <div class="disF orderInfo">
+                                        <h5 class="title">Total</h5>
+                                        <h5 class="price">$8.00</h5>
+                                    </div>
+                                </div>
+                                <div class="payMethode">
+                                    <div class="methode">
+                                        <input type="radio" name="payMethode" id="methode1" value="methode1"> 
+                                        <label for="methode1">Direct bank transfer</label>
+                                        <div class="box hidden">
+                                            <p>
+                                                Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order will not be shipped until the funds have cleared in our account.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="methode">
+                                        <input type="radio" name="payMethode" id="methode2" value="methode2"> 
+                                        <label for="methode2">Check payments</label>
+                                        <div class="box hidden">
+                                            <p>
+                                                Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="methode">
+                                        <input type="radio" name="payMethode" id="methode3" value="methode3"> 
+                                        <label for="methode3">Cash on delivery</label>
+                                        <div class="box hidden">
+                                            <p>
+                                                Pay with cash upon delivery.
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="methode">
+                                        <input type="radio" name="payMethode" id="methode4" value="methode4"> 
+                                        <label for="methode4"> PayPal</label>
+                                        <img src="https://jevelin.shufflehound.com/burger-shop/wp-content/themes/jevelin/img/paypal.png" alt="" class="ml-2">
+                                        <div class="box hidden">
+                                            <p>
+                                                Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="placeOrder">Place Order</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Billing details-->
+        <!-- FOOTER-->  
+        <div class="footer" >
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-4 jev">
+                            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo_dark.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                            <div class="disF footer-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 conus">
+                            <h4 class="foHeader">Contact us</h4>
+                            <div class="disF-a">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Street name 1, City</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-phone"></i>
+                                <p>+569 2698 0256</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-envelope"></i>
+                                <p>email2@companyname.com</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-envelope"></i>
+                                <p>email2@companyname.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 subs">
+                            <h4 class="foHeader center">Subscribe</h4>
+                            <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Enter Your email here.." 
+                            autocomplete=""> <br>
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END FOOTER--> 
+        <!-- scrollToTop-->
+        <section class="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </section>
+         <!--END scrollToTop--> 
+            
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            wow = new WOW(
+                  {
+                  boxClass:     'wow',      
+                  animateClass: 'animated', 
+                  offset:       150,          
+                  mobile:       true,       
+                  live:         true,
+                
+                }
+                )
+            new WOW().init();
+            
+        </script>
+    </body>
+</html>
