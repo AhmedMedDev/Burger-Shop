@@ -217,6 +217,9 @@ a:hover{
 .nav ul li:nth-child(7) a:hover{
     color: #42CD66
 }
+a.cart {
+    color: white;
+}
 /*MEDIA NAV*/
 @media(max-width:990px){
     body{
@@ -253,6 +256,11 @@ a:hover{
         top: 50%;
         transform: translate(0, -50%);
         margin-left: 4%;
+    }
+    a.cart {
+        position: absolute;
+        right: 100px;
+        
     }
        
 }

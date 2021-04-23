@@ -127,13 +127,14 @@ $(document).ready(function () {
     })
     
     /*************************************************SCROLL TO ELEMNT**************/
-        $('.nav ul li a ').click(function(e){
+        $('.navIndex ul li a , label a ').click(function(e){
             e.preventDefault();
             $('html ,body').animate({
                     scrollTop:$('#'+$(this).data('scroll')).offset().top 
                 },2000);
             
         });
+        
    /*************************************************SCROLL TO ELEMNT**************/
    /*************************************************SCROLL_TO_TOP**************/
     $(window).on("scroll",function(){

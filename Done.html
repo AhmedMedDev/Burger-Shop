@@ -1,2 +1,163 @@
-<!-- Order details -->
-<!-- Product details -->
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        
+        <link rel="icon" href="https://jevelin.shufflehound.com/fav.png">
+        
+        <title>  Burger-Shop </title>
+         
+        <!------------------BOOTSTRAB------------------------------------------------------------------------->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+        <!------------------END BOOTSTRAB------------------------------------------------------------------------->
+        
+        <link rel="stylesheet" href="css/animation.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/cart.css">
+        <link rel="stylesheet" href="css/check.css">
+        <link rel="stylesheet" href="css/done.css">
+        
+    </head>
+    <body>
+        <!-- Rout-->
+        <div class="rout ">
+            <div class="container ">
+                <div class="content">
+                    <a href="index.html" class="title">Jevelin</a>
+                    <div class="url">
+                        <span> <a href="index.html">Home</a> </span>
+                        <span class="ml-2">></span>
+                        <span class="ml-2">Done</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END Rout-->
+        <!-- progress bar-->
+        <div class="prog">
+            <div class="container">
+                <div class="content">
+                    <ul class="probar">
+                        <li class="cart activeCart">View Cart</li>
+                        <li class="cart activeCart">Checkout</li>
+                        <li class="cart activeCart">Done</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- Final-Bill -->
+        <div class="finalBill">
+            <div class="container">
+                <div class="content">
+                    <h6>Thank you. Your order has been received.</h6>
+                    <div class="row billHeader">
+                        <div class="col-lg-3">
+                            <h4>Order number:</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Date:</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Total:</h4>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Payment method:</h4>
+                        </div>
+                    </div>
+                    <div class="row billBody">
+                        <div class="col-lg-3">
+                            <h5>334</h5>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>April 23, 2021</h5>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>£8.00</h5>
+                        </div>
+                        <div class="col-lg-3">
+                            <h5>Cash on delivery</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Final-Bill-->
+        <!-- FOOTER-->  
+        <div class="footer" >
+            <div class="container">
+                <div class="content">
+                    <div class="row">
+                        <div class="col-lg-4 jev">
+                            <img src="https://cdn.jevelin.shufflehound.com/wp-content/uploads/sites/44/2020/09/Jevelin_logo_dark.png" alt="">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do</p>
+                            <div class="disF footer-icon">
+                                <i class="fab fa-twitter"></i>
+                                <i class="fab fa-instagram"></i>
+                                <i class="fab fa-youtube"></i>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 conus">
+                            <h4 class="foHeader">Contact us</h4>
+                            <div class="disF-a">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <p>Street name 1, City</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-phone"></i>
+                                <p>+569 2698 0256</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-envelope"></i>
+                                <p>email2@companyname.com</p>
+                            </div>
+                            <div class="disF-a">
+                                <i class="fas fa-envelope"></i>
+                                <p>email2@companyname.com</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 subs">
+                            <h4 class="foHeader center">Subscribe</h4>
+                            <input 
+                            type="email" 
+                            name="email"
+                            placeholder="Enter Your email here.." 
+                            autocomplete=""> <br>
+                            <button class="subscribe">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--END FOOTER--> 
+        <!-- scrollToTop-->
+        <section class="scrollToTop">
+            <i class="fas fa-chevron-up"></i>
+        </section>
+         <!--END scrollToTop--> 
+            
+        
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            wow = new WOW(
+                  {
+                  boxClass:     'wow',      
+                  animateClass: 'animated', 
+                  offset:       150,          
+                  mobile:       true,       
+                  live:         true,
+                
+                }
+                )
+            new WOW().init();
+            
+        </script>
+    </body>
+</html>

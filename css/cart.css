@@ -9,7 +9,7 @@ body{
 .rout{
     background: #eeeeeeb3;
     padding: 2.5rem;
-    margin: 80px 0;
+    /* margin: 80px 0; */
 }
 .rout .content{
     display: flex;
@@ -21,6 +21,7 @@ body{
 .rout .content .title{
     font-size: 40px;
     font-family: 'Fredoka One', cursive;
+    color: black;
 }
 .rout .content  .url{
     text-align: end;
@@ -54,7 +55,7 @@ li.cart {
     font-size: 18px;
     font-weight: 700;
     color: rgba(255,57,57,0.5);
-    border-radius: 100px;
+    /* border-radius: 100px; */
 }
 .activeCart {
     background: #ff3939;
