@@ -86,7 +86,7 @@ $(document).ready(function () {
             $('.nav').css({
                 "paddingTop":"10px",
                 "paddingBottom":"0px",
-                "background": "#000" ,
+                "background": "#161719" ,
                 "height":"60px !important",
             });
             $('.nav ul li a').css({
