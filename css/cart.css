@@ -12,8 +12,16 @@ body{
     /* margin: 80px 0; */
 }
 .rout .content{
-    display: flex;
+    
+}
+.rout .content .row{
     align-items: center;
+}
+@media (max-width:576px) {
+    .rout .col-sm-6 {
+        justify-content: center;
+        display: flex;
+    }
 }
 .rout .content > div {
     flex-grow: 1;
@@ -40,8 +48,8 @@ body{
 ul.probar {
     margin: 0;
     display: flex;
+    flex-wrap: wrap;
     text-align: center;
-    /* padding: 1rem; */
     background-color: rgba(255,57,57,0.07);
     border-radius: 100px;
     padding: 0;
@@ -78,7 +86,7 @@ li.cart {
     margin: 50px 0;
 }
 
-.col-lg-2.quantity {
+.quantity {
     display: flex;
 }
 input[type=number]::-webkit-inner-spin-button,
@@ -95,7 +103,7 @@ input[type=number]
 }
 .quantity input {
     font-size: 20px;
-    width: 26%;
+    width: fit-content;
     display: flex;
     text-align: center;
     justify-content: center;
@@ -137,12 +145,13 @@ input[type=number]
     width: 40px;
     font-size: 18px;
 }
-.showCart .col-lg-2 {
+.showCart .row > div {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 20px 0;
 }
-.col-lg-2.avatar img {
+.avatar img {
     width: 70px;
     height: 70px;
 }
@@ -232,4 +241,24 @@ h5.price {
 
 .cartTotal {
     padding: 60px 0;
+}
+
+
+@media (max-width:576px){
+    .apply{
+        padding: 30px;
+    }
+    .apply input[type="text"],.apply button {
+        width: 100%;
+        margin: 20px 0;
+    }
+    .apply .content{
+        display: block;
+    }
+    .box {
+        width: 100%;
+    }
+    .cartTotal .disF{
+        width: auto;
+    }
 }
