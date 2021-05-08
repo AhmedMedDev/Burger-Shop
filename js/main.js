@@ -198,7 +198,11 @@ $(document).ready(function () {
     
     
     
-    
+    $(' header img').on("load",function(){
+        $('body').css({
+            "animation":"none"
+        })
+    })
     
     
     
